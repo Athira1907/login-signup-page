@@ -1,0 +1,159 @@
+
+.landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container1{
+   
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://4.bp.blogspot.com/-IQkkrzq0lmA/UqHQJnzQPLI/AAAAAAAANO8/l2EVhK2th9o/s1600/9.jpg');
+    /* background: url('https://th.bing.com/th/id/R.e9affc8dee48f9fffa798b63e1d56779?rik=bsW2C1Iw76j1hA&riu=http%3a%2f%2fhdqwalls.com%2fdownload%2fdark-road-clouds-over-landscape-view-front-al-1920x1080.jpg&ehk=6RENGd%2fNQ2O6wEguQlPWtaZgINmkIlrEO73L%2fcofMiQ%3d&risl=&pid=ImgRaw&r=0'); */
+    /* background:url('https://c4.wallpaperflare.com/wallpaper/455/346/398/macro-blur-keyboard-laptop-wallpaper-preview.jpg') ; */
+     /* background-image: url('https://th.bing.com/th/id/OIP.7FHC3SDmfVfLncb9ZuGmEwHaEu?pid=ImgDet&rs=1');  */
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 30px;
+    align-items: center;
+}
+#title{
+  font-size: 30px;
+    margin-left: 20px;
+}
+ul li{
+    position: relative;
+    list-style: none;
+    font-size: 25px;
+    color: #fff;
+}
+ul li::after{
+content: '';
+position: absolute;
+width: 100%;
+height: 2px;
+background-color: #fff;
+left: 0;
+bottom: -4px;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform .8s;
+
+}
+ul li:hover::after{
+    transform: scaleX(100%);
+    transform-origin: left;
+}
+#btn{
+   margin-left: 80px;
+   width: 100px;
+   height: 26px;
+   border-radius: 10px;
+   border: 2px solid #000;
+   padding: 5px;
+   font-size: 22px;
+   text-decoration: none;
+    text-align:center;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn:hover{
+    background-color: #000;
+    color: #fff;
+    
+}
+#btn:hover a{
+    color: #fff;
+}
+#btn a{
+    /* text-decoration: none;
+    text-align:center;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+   
+}
+#login{
+    width: 460px;
+    height: 420px;
+    /* background-color: red; */
+    box-shadow: 10px 10px 30px #000;
+     margin-left: 500px; 
+     background:transparent;
+     border: 2px solid rgba(252, 243, 243, 0.5);
+     border-radius: 20px;
+     backdrop-filter:blur(3px) ;
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    row-gap: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.input-box {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+label{
+    color: #fff;
+    font-size: 20px;
+    /* top: 20%; */
+    /* transition: .2s;
+    transform: translateY(-50%);
+    top: 50%; */
+    /* position: absolute; */
+}
+.icon{
+    font-size: 29px;
+    color: #fff;
+}
+.forgot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    /* position: relative; */
+    width: 100%;
+    height: 20px;
+    outline: none;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.input-box input:focus~label,
+.input-box input:valid~label
+{
+    top: -3px;
+}
+.btn-login{
+    width: 270px;
+    height: 30px;
+    font-size: 22px;
+}
